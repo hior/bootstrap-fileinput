@@ -58,7 +58,7 @@
         return status;
     };
     isEdge = function () {
-        return new RegExp('Edge\/[0-9]+', 'i').test(navigator.userAgent);
+        return false; //new RegExp('Edge\/[0-9]+', 'i').test(navigator.userAgent);
     };
     handler = function ($el, event, callback, skipNS) {
         var ev = skipNS ? event : event + '.fileinput';
